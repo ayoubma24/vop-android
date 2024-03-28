@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:linphone="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:src="?attr/setting_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="sans-serif-light"
+            android:text="Netexem Virtual Phone"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="Settings"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/bg_settings"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Account Number"
+                android:textColor="?attr/setting_text_color"
+                android:textSize="@dimen/_11ssp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:background="?attr/setting_text_color"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/pref_accNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="No Data"
+                android:textColor="?attr/setting_text_color"
+                android:textSize="@dimen/_11ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/bg_settings"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="Extension Number"
+               android:textColor="?attr/setting_text_color"
+
+                android:textSize="@dimen/_11ssp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:background="?attr/setting_text_color"
+                />
+
+            <TextView
+                android:id="@+id/pref_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="50"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="username"
+                android:textColor="?attr/setting_text_color"
+                android:textSize="@dimen/_11ssp" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pref_delete_account"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:background="@drawable/bg_settings"
+            android:backgroundTint="@color/red_color"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@color/white_color" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:orientation="vertical" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="sans-serif-light"
+        android:text="For help please contact us at"
+        android:textColor="?attr/setting_text_color"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:text="844.638.3936"
+        android:textColor="?attr/setting_text_color"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="normal" />
+        </LinearLayout>
+
+</RelativeLayout>

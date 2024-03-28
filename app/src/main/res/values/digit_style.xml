@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialerDigit" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_margin">@dimen/_10sdp</item>
+
+    </style>
+
+    <declare-styleable name="Numpad">
+        <attr name="play_dtmf">
+            <enum name="dont" value="0" />
+            <enum name="play" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <style name="DialpadKeyNumberStyle">
+        <item name="android:textColor">@color/dialpad_primary_text_color</item>
+        <item name="android:textSize">@dimen/dialpad_key_numbers_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DialpadKeyLettersStyle">
+        <item name="android:textColor">@color/dialpad_secondary_text_color</item>
+        <item name="android:textSize">@dimen/dialpad_key_letters_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <style name="PadButtonStyle">
+        <item name="android:layout_width">@dimen/_40sdp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_margin">@dimen/_8sdp</item>
+        <item name="android:padding">@dimen/_1sdp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="PadButtonStyle.Circle">
+        <item name="android:background">@drawable/numpad_one</item>
+    </style>
+
+    <style name="PadLayoutStyle">
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/_20sdp</item>
+    </style>
+
+    <style name="DisplayEditTextStyle">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">bottom|end</item>
+    </style>
+
+    <style name="DisplayEditTextStyle.Formula">
+        <item name="android:paddingTop">48dip</item>
+        <item name="android:paddingBottom">24dip</item>
+        <item name="android:paddingStart">16dip</item>
+        <item name="android:paddingEnd">16dip</item>
+    </style>
+
+</resources>

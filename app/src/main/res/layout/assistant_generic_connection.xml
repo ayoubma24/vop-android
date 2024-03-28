@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/backgroundColor">
+
+    <fragment
+        android:id="@+id/status"
+        android:name="org.linphone.fragments.StatusBarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:layout="@layout/status_bar" />
+
+    <include
+        android:id="@+id/top_bar"
+        android:visibility="gone"
+        layout="@layout/assistant_topbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/standard_text_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/assistant_linphone_account"
+                android:paddingTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textSize="@dimen/_18ssp"
+                android:textAllCaps="false" />
+
+            <TextView
+                style="@style/standard_small_text_font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="top"
+                android:paddingTop="10dp"
+                android:visibility="gone"
+                android:text="@string/assistant_login_desc" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:columnCount="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/assistant_input_field_header_font"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username"
+                        android:visibility="gone"
+                        android:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/account_number"
+                        android:background="@drawable/bg_edit_text"
+                        android:textColor="@color/black_color"
+                        android:contentDescription="@string/content_description_phone_number_field"
+                        android:inputType="phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/phone_number"
+                        android:padding="10dp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:maxLines="1"/>
+
+                    <EditText
+                        android:id="@+id/assistant_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:contentDescription="@string/content_description_username_field"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:hint="@string/username"
+                        android:textColor="@color/black_color" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/assistant_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edit_text"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:padding="10dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:hint="@string/password"
+                        android:textColor="@color/black_color" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/assistant_input_field_header_font"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/domain"
+                        android:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/assistant_domain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/resizable_textfield"
+                        android:contentDescription="@string/content_description_domain_field"
+                        android:inputType="textUri"
+                        android:maxLines="1"
+                        android:hint="@string/domain"
+                        android:textColor="@color/black_color" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/assistant_input_field_header_font"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/domain"
+                        android:textAllCaps="true" />
+
+                    <EditText
+                        android:id="@+id/assistant_domain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/resizable_textfield"
+                        android:contentDescription="@string/content_description_domain_field"
+                        android:inputType="textUri"
+                        android:maxLines="1"
+                        android:hint="@string/domain"
+                        android:textColor="@color/black_color" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/action_adv"
+                        style="@style/assistant_input_field_header_font"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Advanced"
+                        android:textSize="@dimen/_10ssp"
+                        android:textColor="@color/black_color"
+                        android:textAllCaps="false" />
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/layout_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_columnWeight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/assistant_input_field_header_font"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transport"
+                        android:textAllCaps="true" />
+
+                    <RadioGroup
+                        android:id="@+id/assistant_transports"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/transport_udp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textColor="?attr/primaryTextColor"
+                            android:text="@string/pref_transport_udp" />
+
+                        <RadioButton
+                            android:id="@+id/transport_tcp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:checked="true"
+                            android:textColor="?attr/primaryTextColor"
+                            android:text="@string/pref_transport_tcp" />
+
+                        <RadioButton
+                            android:id="@+id/transport_tls"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:textColor="?attr/primaryTextColor"
+                            android:visibility="gone"
+                            android:text="@string/pref_transport_tls" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_edit_text"
+                        android:padding="@dimen/_4sdp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Port: "
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="?attr/login_port_text_color" />
+
+                        <EditText
+                        android:id="@+id/port_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/content_description_username_field"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:background="?attr/login_port_background_color"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:hint="Port Number"
+                        android:text="5065"
+                        android:textSize="@dimen/_13ssp"
+                        android:textColor="?attr/login_port_text_color" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/assistant_login"
+                style="@style/button_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+
+                android:background="@drawable/assistant_button"
+                android:gravity="center"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingEnd="@dimen/_30sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/assistant_login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+
+                />
+
+            <TextView
+                style="@style/standard_small_text_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:textSize="@dimen/_9ssp"
+                android:textColor="@color/grey_color"
+                android:text="Please login to your account to access your office phone If you need help please contact us at 844.638.3936"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

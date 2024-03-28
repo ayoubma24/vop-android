@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/_7sdp">
+
+    <LinearLayout
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/separator_text"
+            style="@style/accent_colored_title_font"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?attr/dividerColor"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/history_whole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:id="@+id/hit_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:19 PM"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/grey_color" />
+
+            <ImageView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_description_detail"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/ic_info" />
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/delete"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center|right|end"
+            android:layout_centerVertical="true"
+            android:button="@drawable/checkbox"
+            android:contentDescription="@string/content_description_delete"
+            android:clickable="false"
+
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/history_click"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <include layout="@layout/contact_avatar" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginLeft="2dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_description_call_direction"
+                android:src="@drawable/call_status_incoming" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/icon"
+                android:orientation="vertical">
+
+                <org.linphone.views.MarqueeTextView
+                    android:id="@+id/sip_uri"
+                    style="@style/contact_name_list_cell_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="(695) 54545-45454"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold" />
+
+                <org.linphone.views.MarqueeTextView
+                    android:id="@+id/sip_country"
+                    style="@style/country_name_list_cell_font"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/icon"
+                    android:gravity="center_vertical"
+                    android:fontFamily="sans-serif"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_9sdp"
+                    android:text="United States " />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

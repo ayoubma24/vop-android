@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "759962946420",
+    "project_id": "netexem-9f54f",
+    "storage_bucket": "netexem-9f54f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759962946420:android:0958c86abd48aec939fa21",
+        "android_client_info": {
+          "package_name": "com.netexem.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759962946420-n6v3a7v56o5e1nsvcf289h0re6s3qo3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIy4EmMpQqQuUimK4OvNN1s7t1db1WZe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759962946420-n6v3a7v56o5e1nsvcf289h0re6s3qo3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759962946420:android:4a555b7f9954850639fa21",
+        "android_client_info": {
+          "package_name": "com.netexem.app.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759962946420-n6v3a7v56o5e1nsvcf289h0re6s3qo3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIy4EmMpQqQuUimK4OvNN1s7t1db1WZe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759962946420-n6v3a7v56o5e1nsvcf289h0re6s3qo3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:hapticFeedbackEnabled="true"
+    android:gravity="bottom"
+    android:layout_marginTop="@dimen/_90sdp"
+    android:orientation="vertical">
+
+
+    <org.linphone.dialer.views.PadLayout
+        android:id="@+id/padLayout"
+        style="@style/PadLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        custom:numColumns="3"
+        custom:numRows="5">
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button1"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText=" "
+            custom:numberText="1" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button2"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText="ABC"
+            custom:numberText="2" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button3"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText="DEF"
+            custom:numberText="3" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button4"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText="GHI"
+            custom:numberText="4" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button5"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText="JKL"
+            custom:numberText="5" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button6"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText="MNO"
+            custom:numberText="6" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button7"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText="PQRS"
+            custom:numberText="7" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button8"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText="TUV"
+            custom:numberText="8" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button9"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText="WXYZ"
+            custom:numberText="9" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button10"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:numberText="*" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button11"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:letterText="+"
+            custom:numberText="0" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button12"
+            style="@style/PadButtonStyle.Circle"
+            android:hapticFeedbackEnabled="true"
+            custom:numberText="#" />
+
+        <org.linphone.dialer.views.DialPadKey
+            android:id="@+id/button13"
+            android:visibility="invisible"
+            android:hapticFeedbackEnabled="true"
+            style="@style/PadButtonStyle.Circle"
+            custom:numberText="" />
+
+        <org.linphone.call.views.CallButton
+            android:id="@+id/start_call"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            style="@style/PadButtonStyle.Circle"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/call"
+            android:padding="@dimen/_17sdp"
+            android:visibility="gone"
+            android:hapticFeedbackEnabled="true"
+            android:contentDescription="@string/content_description_call"
+            android:src="@drawable/ic_call_white_24dp" />
+
+        <org.linphone.dialer.views.EraseButton
+            android:id="@+id/erase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/_25sdp"
+            android:visibility="gone"
+            android:hapticFeedbackEnabled="true"
+            android:contentDescription="@string/content_description_backspace"
+            android:src="@drawable/melons_keypad_delete" />
+
+    </org.linphone.dialer.views.PadLayout>
+
+</LinearLayout>

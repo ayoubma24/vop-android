@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/vertical_divider"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/hang_up"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/outgoing_btm"
+        android:contentDescription="@string/content_description_hang_up"
+        android:padding="@dimen/_18sdp"
+        android:backgroundTint="@color/red_color"
+        android:src="@drawable/ic_call_end_white_24dp" />
+
+    <TextView
+        android:id="@+id/hide"
+        android:text="Hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_14ssp"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/hang_up"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:padding="@dimen/_18sdp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_toLeftOf="@id/vertical_divider">
+
+        <View
+            android:id="@+id/left_vertical_divider"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/left_vertical_divider"
+            android:background="@drawable/button_background_dark"
+            android:contentDescription="@string/content_description_numpad"
+            android:padding="15dp"
+            android:src="@drawable/call_numpad" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/vertical_divider">
+
+        <View
+            android:id="@+id/right_vertical_divider"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/right_vertical_divider"
+            android:background="@drawable/footer_button">
+
+            <ImageView
+                android:id="@+id/chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_background_dark"
+                android:contentDescription="@string/content_description_chat_button"
+                android:padding="15dp"
+                android:src="@drawable/footer_chat" />
+
+            <TextView
+                android:id="@+id/missed_chats"
+                style="@style/unread_count_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/unread_message_count_bg"
+                android:gravity="center"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
